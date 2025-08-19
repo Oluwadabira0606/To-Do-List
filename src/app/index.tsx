@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { View, SafeAreaView } from "react-native";
+import { View } from "react-native";
 import { AppText } from "@/components/AppText";
 import { TodoInput } from "@/components/TodoInput";
 import { TodoList } from "@/components/TodoList";
 import { TodoStats } from "@/components/TodoStats";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 type Todo = {
   id: string;
@@ -39,7 +40,7 @@ export default function IndexScreen() {
   const pendingCount = todos.length - completedCount;
 
   return (
-    <SafeAreaView className="flex-1 bg-gradient-to-br from-purple-50 to-pink-50">
+    <SafeAreaView className="flex-1 bg-gradient-purple-pink">
       <View className="flex-1 p-4">
         {/* Header */}
         <View className="items-center mb-8">

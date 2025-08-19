@@ -14,7 +14,7 @@ export function TodoStats({ total, completed, pending }: TodoStatsProps) {
   const completionRate = total > 0 ? Math.round((completed / total) * 100) : 0;
 
   return (
-    <View className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4 mb-6 border border-purple-100">
+    <View className="bg-purple-50 rounded-lg p-4 mb-6 border border-purple-100">
       <View className="flex-row justify-between items-center mb-3">
         <AppText size="large" bold className="text-purple-800">
           Progress
@@ -55,7 +55,7 @@ export function TodoStats({ total, completed, pending }: TodoStatsProps) {
 
       <View className="mt-3 bg-gray-200 rounded-full h-2">
         <View
-          className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full"
+          className="bg-gradient-purple-pink-strong h-2 rounded-full"
           style={{ width: `${completionRate}%` }}
         />
       </View>

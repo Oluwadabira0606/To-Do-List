@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom gradient classes for mobile compatibility */
+.bg-gradient-purple-pink {
+  background: linear-gradient(135deg, #faf5ff 0%, #fdf2f8 100%);
+}
+
+.bg-gradient-purple-pink-horizontal {
+  background: linear-gradient(90deg, #faf5ff 0%, #fdf2f8 100%);
+}
+
+.bg-gradient-purple-pink-strong {
+  background: linear-gradient(90deg, #8b5cf6 0%, #ec4899 100%);
+}
+
+.bg-gradient-purple-pink-strong-vertical {
+  background: linear-gradient(180deg, #8b5cf6 0%, #ec4899 100%);
+}

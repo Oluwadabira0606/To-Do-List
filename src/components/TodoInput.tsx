@@ -30,7 +30,7 @@ export function TodoInput({ onAdd }: TodoInputProps) {
       <Pressable
         onPress={handleAdd}
         className={cn(
-          "bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-3 rounded-r-lg",
+          "bg-purple-600 px-6 py-3 rounded-r-lg",
           !text.trim() && "opacity-50"
         )}
         disabled={!text.trim()}
